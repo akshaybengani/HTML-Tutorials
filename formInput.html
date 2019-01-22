@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script>
+    function mul()
+    {
+
+        var num1 = document.getElementById("value1").value;
+        var num2 = document.getElementById("value2").value;
+        var out = num1*num2;
+        document.getElementById("result").innerHTML=out;
+    }
+    function div()
+    {
+        var num1 = document.getElementById("value1").value;
+        var num2 = document.getElementById("value2").value;
+        var out = num1/num2;
+        document.getElementById("result").innerHTML=out;
+    }
+    function add()
+    {
+        var num1 = document.getElementById("value1").value;;
+        var num2 = document.getElementById("value2").value;
+        var out = parseInt(num1)+parseInt(num2);
+        document.getElementById("result").innerHTML=out;
+    }
+    function sub()
+    {
+        var num1 = document.getElementById("value1").value;;
+        var num2 = document.getElementById("value2").value;
+        var out = parseInt(num1)-parseInt(num2);
+        document.getElementById("result").innerHTML=out;
+    }
+
+    </script>
+</head>
+
+<body>
+    Enter two values <br><br>
+    Enter value 1               <input type="text" id="value1"><br>
+    Enter value 2               <input type="text" id="value2"><br>
+            <br>
+            <input type="button" onclick="add()" value="Addition">
+            <input type="button" onclick="sub()" value="Subtraction">
+            <input type="button" onclick="mul()" value="Multiply">
+            <input type="button" onclick="div()" value="Divide">
+                       
+            <p id="result">
+            </p>       
+ 
+</body>
+</html>

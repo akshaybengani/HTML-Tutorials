@@ -1,0 +1,22 @@
+body
+{
+    background-color: aliceblue;
+}
+h1
+{
+    background-color: aquamarine;
+    color: blueviolet;
+    font-size: 300%;
+}
+p{
+    background-color: brown;
+    color: coral;
+    font-family: Verdana;
+    border: 5px dashed blue;
+    padding: 50px;
+    margin: 40px;
+}
+#toma{
+    background-color: purple;
+    font-style: italic;
+}

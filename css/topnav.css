@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial' ,serif;
+    
+}
+.nav{
+    background-color: #595959;
+    color: white;
+    list-style: none;
+    text-align: right;
+    padding: 20px 0 20px 0;
+}
+.nav > li{
+    /* This is the line which displays the li in single line */
+    display: inline-block;
+    /* This is the line which makes space between the list items */
+    padding: 0 25px 0 25px;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: white;
+}
+.nav > li > a:hover{
+    color: grey;
+}
+.logo{
+    color: white;
+    /*This means the logo will be left */
+    float: left;
+    padding-left: 25px;
+}
+.logo > a{
+    text-decoration: none;
+    color: white;
+}
+.banner{
+    width: 100%;
+    display: block;
+}
+.banner > .banner-image{
+    width: 100%;
+    display: block;
+    height: 200px;
+    /*This will adjust the image to center crop inside*/
+    object-fit: cover;
+
+}

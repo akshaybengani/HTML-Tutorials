@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script>
+        function calArea()
+        {
+            // var is used to create a variable in javascript we dont need a specific datatype of variable over 
+            // here we can create anything in the var keyword
+            var s1=4;
+            var s2=5;
+            var s3=6;
+            var p = s1+s2+s3;
+            // Math is the class name and sqrt is the function name.
+            var area = Math.sqrt(p*(p-s1)*(p-s2)*(p-s3));
+            document.write(area);
+            
+        }
+    
+    </script>
+
+</head>
+<body>
+    <input type="button" value="Calculate Area" onclick="calArea()">
+</body>
+
+</html>

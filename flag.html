@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+           // var name = document.getElementById("country").value;
+           // document.myimage.src="India.png".src;
+           // document.getElementById("myimage").src = "img/China.png";
+           function printImage(newimg)
+           {
+        
+            document.getElementById("myimage").src=newimg;
+            
+           }
+
+        </script>
+    </head>
+    <body>
+        Select Country
+        <select id="country" onchange="printImage(this.value)">
+            <option value="img/India.png">India</option>
+            <option value="img/China.jpg">China</option>
+            <option value="img/Pakistan.png">Pakistan</option>
+            <option value="img/SriLanka.png">Sri Lanka</option>
+            <option value="img/America.png">America</option>
+            <option value="img/Russia.jpg">Russia</option>
+            <option value="img/Germany.jpg">Germany</option>
+        </select>
+<br>
+<br>
+<img src="img/India.png" alt="Country Flag" width="300px" height="200px" id="myimage">
+
+    </body>
+</html>

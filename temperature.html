@@ -1,0 +1,36 @@
+<html>
+<script>
+    var flag = 0;
+    function myConvert()
+    {
+        var cTemp = document.getElementById("takeTemperature").value;
+        var celfer = cTemp*9/5+32;
+        var fercel = (cTemp-32)*5/9;
+        if(flag==0)
+        {  
+            document.getElementById("firstlabel").innerHTML="Enter Temperature in Celcius";
+            document.getElementById("mylabel").innerHTML="Ferenhiet is <br>";
+            document.getElementById("myresult").innerHTML=celfer;
+            flag = 1;
+        }
+        else
+        {
+            document.getElementById("firstlabel").innerHTML="Enter Temperature in Ferenhiet";
+            document.getElementById("mylabel").innerHTML="Celcius is <br>";
+            document.getElementById("myresult").innerHTML=fercel;
+            flag = 0;
+        }
+
+    }
+</script>
+
+<body>
+<p id="firstlabel">Enter Temperature in Celcius</p> 
+    <input type="text" id="takeTemperature">
+    <br>
+    <input type="button" onclick="myConvert()" value="Convert">
+    <br>
+    <p id="mylabel"></p>
+    <p id="myresult"></p>
+</body>
+</html>

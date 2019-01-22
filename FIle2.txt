@@ -1,0 +1,7 @@
+qus1
+form input assignment in the lab file
+
+qus2 
+create a drop down meny with 10 countries names 
+when the user select a country it will show the flag of the country in the image view
+
